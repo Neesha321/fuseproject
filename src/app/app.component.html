@@ -1,0 +1,387 @@
+<!-- main -->
+<div id="main">
+  <!-- container -->
+  <div class="container-main" fxFlex="1 0 0" fxFlex="column" class="overflow-x">
+      <!-- left-navbar -->
+      <div class="left-navbar" fxLayout="column" fxFlex="1 0 auto" style="background:#1e2129!important">
+      <div class="overflow-y" class="overflow-x" class="ps" style="position: relative; max-width: auto; max-height:auto;" [perfectScrollbar]="config">
+          <!-- top titlebar -->
+          <div >
+              <li> <a fxLayoutAlign="start center">
+                      <img src="http://angular-material.fusetheme.com/assets/images/logos/fuse.svg" height="30px"
+                          width="30px" alt="no image" class="image">
+                      <span class="title">FUSE</span>
+                      <i class="material-icons" id="iconic">
+                          reorder
+                      </i>
+                  </a></li>
+
+          </div>
+          <!-- top titlebar -->
+          <!-- charles image part -->
+          <div fxLayout="column" fxLayoutAlign="start center" class="navfirst">
+              <div class="username">Charlie Adams</div>
+              <div class="email">adams.charlie@mail.com</div>
+              <div class="imagelogo" fxLayoutAlign="center center">
+                  
+              </div>
+          </div>
+          <!-- charles image part -->
+          <!-- applications -->
+          <div class="menues" fxLayoutAlgn="center center">
+              <div style="background:#2d323e!important">
+                    <img src="../assets/imagess.jpg" height="60px" width="60px" class="imagenav">
+                  <h1 class="menuone" style="text-transform: uppercase"> Applications</h1>
+                  <div class="nav bar">
+                      <ul>
+                          <li> <a class="dash" fxLayoutAlign="start center">
+                                  <mat-icon> dashboard</mat-icon>
+                                  <span class="iconname">Dashboard</span>
+                                  <mat-icon>arrow_forward_ios</mat-icon>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>calendar_today</mat-icon>
+                                  <span class="iconname">Calender</span>
+
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon class="icon">dock</mat-icon>
+                                  <span class="iconname">E-commerce</span>
+                                  <mat-icon fxLayoutAlign="end">arrow_forward_ios</mat-icon>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>airplay</mat-icon>
+                                  <span class="iconname">Academy</span>
+
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>access_time</mat-icon>
+                                  <span class="iconname">Mail</span>
+                                  <mat-chip color="primary" selected>25</mat-chip>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>access_time</mat-icon>
+                                  <span class="iconname">Mail Ngrx</span>
+                                  <mat-chip color="primary" selected>10</mat-chip>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>add circle outline icon</mat-icon>
+                                  <span class="iconname">Chat</span>
+                                  <mat-chip color="accent" selected>13</mat-chip>
+
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>file_copy</mat-icon>
+                                  <span class="iconname">File Manager</span>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>adjust icon</mat-icon>
+                                  <span class="iconname">Contacts</span>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>assistant icon</mat-icon>
+                                  <span class="iconname">To-Do</span>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>assistant icon</mat-icon>
+                                  <span class="iconname">Scrumboard</span>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>assistant icon</mat-icon>
+                                  <span class="iconname">Authentication</span>
+                              </a></li>
+                          <li> <a fxLayoutAlign="start center">
+                                  <mat-icon>assistant icon</mat-icon>
+                                  <span class="iconname">Coming Soon</span>
+                              </a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div>
+
+
+              </div>
+          </div>
+          <!-- applications -->
+          </div>
+      </div>
+      <!-- left nav -->
+      <!-- main content -->
+      <div class="main-content" fxLayout="column" fxFlex="1 0 auto">
+
+          <div class="top-content" fxLayout="column" fxFlex="1 1 auto" class="ps" style="position: relative; max-width: auto; max-height:auto;" [perfectScrollbar]="config">
+              <div>
+                  <!-- toolbar begins -->
+                  <mat-toolbar>
+                      <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+                          <span class="headericon"><i class="material-icons" matTooltip="Calender">calendar_today</i></span>
+                          <span class="headericon"><i class="material-icons" matTooltip="Mail">access_time</i></span>
+                          <span class="headericon"><i class="material-icons" matTooltip="Contacts">arrow_right_alt</i></span>
+                          <span class="headericon"><i class="material-icons" matTooltip="To-Do">bookmark </i></span>
+                          <span class="headericon"><i class="material-icons" matTooltip="Click to add/remove shortcut">star_rate</i></span>
+                      </div>
+                      <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <img src="../assets/imagess.jpg" height="50px" width="50px" class="border">
+                              Charlie Adams
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                <span class="buttonmanage"> <i class="material-icons">
+                                      perm_identity
+                                  </i></span>
+                                  <span>My Profile</span>
+                              </button>
+                              <button mat-menu-item>
+                                <span class="buttonmanage"><i class="material-icons">
+                                      input
+                                  </i></span>
+                                  <span>Inbox</span>
+                              </button>
+                              <button mat-menu-item>
+                                <span class="buttonmanage"> <i class="material-icons">
+                                      delete
+                                  </i></span>
+                                  <span>Logout</span>
+                              </button>
+
+                          </mat-menu>
+                         <span class="rightpart"> <mat-icon>arrow_forward_ios</mat-icon></span>
+                          <div class="toolbar-separator">
+                          </div>
+                          <i class="material-icons" style="width:70px" fxLayoutAlign="center">
+                              search
+                          </i>
+                          <div class="toolbar-separator">
+
+                          </div>
+                          <button mat-icon-button [matMenuTriggerFor]="menuone" fxLayoutAlign="start center" class="right">
+                              <img src="../assets/usa.jpg" height="20px" width="20px">
+                              <span>EN</span>
+                          </button>
+                          <mat-menu #menuone="matMenu">
+                              <button mat-menu-item>
+                                  <span>English</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <span>Rusian</span>
+                              </button>
+                          </mat-menu>
+                          <div class="toolbar-separator">
+
+                          </div>
+                          <span class="right-side"><i class="material-icons" fxLayoutAlign="start center" >
+                              view_headline
+                          </i></span>
+                      </div>
+                  </mat-toolbar>
+                  <!-- toolbar ends -->
+              </div>
+
+              <div>
+                  <!-- row contain -->
+                  <div fxFlex="1 1 auto" >
+                      <div style="background:#039be5" class="container" fxLayoutAlign="start center">
+                          <h1 class="header"> Welcome Back, Charlie!</h1>
+                      </div>
+                      <div>
+                          <mat-tab-group style="background:gainsboro ">
+                              <mat-tab label="Home"  class="overflow-x">
+                                  <app-home> </app-home>
+                              </mat-tab>
+                              <mat-tab label="Budget Summary">
+                                  <div fxLayout="row" fxFlex>
+                                      <mat-card class="tabcardbar">
+
+                                          <mat-card-header>
+                                              <mat-card-title>Budget Distribution</mat-card-title>
+
+                                          </mat-card-header>
+
+                                          <mat-card-content fxLayoutAlign="center center" fxLayout="column">
+
+
+
+                                          </mat-card-content>
+                                      </mat-card>
+                                      <mat-card class="tabcardbar">
+
+                                          <mat-card-header>
+                                              <mat-card-title>Spent</mat-card-title>
+
+                                          </mat-card-header>
+
+                                          <mat-card-content fxLayoutAlign="center center" fxLayout="column">
+
+
+
+                                          </mat-card-content>
+                                      </mat-card>
+                                  </div>
+                              </mat-tab>
+                              <mat-tab label="Team Members">
+                                  <app-table></app-table>
+                              </mat-tab>
+                          </mat-tab-group>
+                      </div>
+
+                  </div>
+                  <!-- row contain ends -->
+                  <!-- column started -->
+                  <div fxFlex="0 1 auto" class="card" fxLayout="column" fxFlex>
+                      <div>
+                          <!-- first card column starts -->
+                          <mat-card class="example-card">
+                              <mat-card-header>
+                                  <mat-card-title>Current Time</mat-card-title>
+                                  <div class="cardtitlemanage">
+                                      <i class="material-icons">
+                                          more_vert
+                                      </i>
+                                  </div>
+                              </mat-card-header>
+
+                              <mat-card-content fxLayoutAlign="center center" fxLayout="column">
+                                  <h2 class="cardcontain" style="color:rgba(0,0,0,.54);">January</h2>
+
+                                  <h1 class="middlecontain" style="color:rgba(0,0,0,.54);"> 27</h1>
+
+                                  <h1 class="cardcontain" style="color:rgba(0,0,0,.54);">2019</h1>
+
+                              </mat-card-content>
+
+                          </mat-card>
+                          <!-- first card column ends -->
+                      </div>
+                      <div>
+                          <!-- second card column  starts-->
+                          <mat-card class="example-card1">
+                              <mat-card-header>
+                                  <mat-card-title style="color:rgba(0,0,0,.54);">New york</mat-card-title>
+                                  <div class="cardtitlemanage1">
+                                      <i class="material-icons">
+                                          more_vert
+                                      </i>
+                                  </div>
+                              </mat-card-header>
+
+
+                              <mat-card-content fxLayoutAlign="space-evenly center" fxLayout="row" class="headericon">
+                                  <i class="material-icons">
+                                      cloud
+                                  </i>
+                                  <h1 class="temp" style="color:rgba(0,0,0,.54);">22 &#176;C</h1>
+
+
+                              </mat-card-content>
+                              <mat-divider></mat-divider>
+                              <div class="spacemanage">
+                                  <div  fxLayout="row" class="columnseconddiv">
+                                      <div fxLayout="row" fxLayoutAlign="start center" >
+                                          <span><i class="material-icons">
+                                          horizontal_split
+                                      </i></span>
+                                      <span><h1 style="color:rgba(0,0,0,.54);">12 KMH</h1></span>
+                                      </div>
+                                      <div fxLayout="row" fxLayoutAlign="start center">
+                                      <i class="material-icons">
+                                          query_builder
+                                      </i>
+                                      <h1 style="color:rgba(0,0,0,.54);">NW</h1>
+                                      </div>
+                                      <div fxLayout="row" fxLayoutAlign="start center">
+                                      <i class="material-icons">
+                                          cloud
+                                      </i>
+                                      <h1 style="color:rgba(0,0,0,.54);">98%</h1>
+                                      </div>
+                                  </div>
+                              </div>
+                              <mat-divider></mat-divider>
+                              <div class="spacemanage">
+                                  <div fxLayout="row" fxLayoutAlign="center center">
+                                      <h1 fxFlex="1 1 auto" style="color:rgba(0,0,0,.54);">Sunday</h1>
+                                      <div fxFlex="0 1 auto">
+                                          <span><i class="material-icons">
+                                                  cloud
+                                              </i>
+                                              <p style="color:rgba(0,0,0,.54);">22 &#176;C</p>
+                                          </span>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <mat-divider></mat-divider>
+                              <div class="spacemanage">
+                                  <div fxLayout="row" fxLayoutAlign="center center">
+                                      <h1 fxFlex="1 1 auto" style="color:rgba(0,0,0,.54);">Monday</h1>
+                                      <div fxFlex="0 1 auto">
+                                          <span><i class="material-icons">
+                                                  cloud
+                                              </i>
+                                              <p style="color:rgba(0,0,0,.54);"> 19 &#176;C</p>
+                                          </span>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <mat-divider></mat-divider>
+                              <div class="spacemanage">
+                                  <div fxLayout="row" fxLayoutAlign="center center">
+                                      <h1 fxFlex="1 1 auto" style="color:rgba(0,0,0,.54);">Monday</h1>
+                                      <div fxFlex="0 1 auto">
+                                          <span><i class="material-icons">
+                                                  cloud
+                                              </i>
+                                              <p style="color:rgba(0,0,0,.54);">15 &#176;C</p>
+                                          </span>
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <mat-divider></mat-divider>
+                              <div class="spacemanage">
+                                  <div fxLayout="row" fxLayoutAlign="center center">
+                                      <h1 fxFlex="1 1 auto" style="color:rgba(0,0,0,.54);">Tuesday</h1>
+                                      <div fxFlex="0 1 auto">
+                                          <span><i class="material-icons">
+                                                  cloud
+                                              </i>
+                                              <p style="color:rgba(0,0,0,.54);">10 &#176;C</p>
+                                          </span>
+
+                                      </div>
+                                  </div>
+                              </div>
+                          </mat-card>
+                          <!-- second card column  ends-->
+                      </div>
+                  </div>
+
+                  <!-- column ends -->
+              </div>
+
+          </div>
+
+
+          <!-- footer -->
+          <div class="footer" fxLayout="column" fxFlex="0 0 auto" style="background: black">
+              <div class="footer-content">
+                 <span class="footerbutton" fxFlex="1 0 auto"><button mat-raised-button color="accent" class="buttontext">
+                     <mat-icon >shopping_cart</mat-icon>Purchase Fuse (Angular 7+)</button></span>
+                 <div fxFlex="0 1 auto" fxLayout="row" class="side-fotter">
+                     <h1 class="fottersidecontent1">Documentation</h1>
+                     <span class="footericon">•</span>
+                     <h1 class="footersidecontent2">Changelog</h1>
+                 </div>
+              </div>
+          </div>
+          <!-- footer -->
+          <!-- main content -->
+      </div>
+      <!-- maincontent -->
+      <!-- leftnav -->
+  </div>
+  <!-- container -->
+</div>
+<!-- main -->

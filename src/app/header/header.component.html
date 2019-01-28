@@ -1,0 +1,57 @@
+<div fxLayout="column">
+    <mat-toolbar color="primary">
+        <div fxFlex="90" fxLayoutAlign="start center">
+            <div fxShow.gt-xs>
+                <button mat-icon-button (click)="onToggleSidenav()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <i class="material-icons" matTooltip="alarm">
+                    alarm_add
+                </i>
+                <i class="material-icons" matTooltip="account">
+                    account_circle
+                </i>
+                <i class="material-icons" matTooltip="done">
+                    done
+                </i>
+                <i class="material-icons" matTooltip="open">
+                    open_in_new
+                </i>
+            </div>
+        </div>
+        <div fxLayout="row"  fxFlex="10" fxLayoutAlign="start center">
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+            <img src="../../assets/download.png"><span>Mr.ABC</span>
+            <mat-icon class="size">arrow_forward_ios</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                    <button mat-menu-item>My Profile</button>
+                    <button mat-menu-item>Inbox</button>
+                    <button mat-menu-item>Logout</button>
+                  </mat-menu>
+                 
+        </div>
+        <div>  <i class="material-icons" matTooltip="search" fxFlex="10">
+            account_circle
+        </i>
+
+    </div>
+    <div fxFlex="10" fxLayoutAlign="start center"> 
+        <p>English</p> 
+            <button mat-icon-button [matMenuTriggerFor]="menu">
+               
+                <i class="material-icons">
+                        store
+                        </i>
+                    
+        </button>
+        <mat-menu #menu="matMenu" fxLayoutAlign="start center">
+                <button mat-menu-item>English</button>
+                <button mat-menu-item>Turnish</button>
+              
+              </mat-menu>
+    </div>
+      
+
+    </mat-toolbar>
+</div>

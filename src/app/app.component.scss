@@ -1,0 +1,383 @@
+//html  
+html{
+    font-family: Muli,'Helvetica Neue',Arial,sans-serif;
+  
+}
+//html
+// main
+#main{
+    height:100%;
+    width:100%;
+}
+// container
+.container-main{
+display:flex;
+}
+// container
+//left-nav
+.left-navbar{
+ max-width:300px;
+ min-width:300px;
+ width:300px;
+}
+//list
+li{
+    list-style: none;
+}
+//list
+//iconside
+#iconic{
+    color:rgba(255,255,255,.5);
+    cursor:pointer;
+}
+//iconside
+//fuseimage
+.image{
+   margin-right:10px;
+}
+//fuseimage
+//fuse
+.title{
+    color:rgba(255,255,255,.5);
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .4px;
+    flex: 1 1 auto;
+}
+//fuse
+//charles image
+.navfirst{
+    margin-top: 50px;
+    margin-bottom:20px;
+}
+//charles image
+//name
+.username{
+    color:white;
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+    margin-bottom:8px;
+}
+//name
+//email
+.email{
+    color:rgba(255,255,255,.5);
+    font-family: 'Muli', sans-serif;
+    font-size: 15px;
+    margin-bottom:30px; 
+}
+//email
+//circleimageicon
+.imagenav{
+    position:relative;
+    border-radius: 50%;
+    bottom:27px;
+    left:110px;
+    box-shadow:0px 0px 15px;
+}
+// side-navsecondbox
+.menues{
+    width:100%;
+    color:rgba(255,255,255,.5);
+}
+// side-navsecondbox
+a{
+    color:rgba(255,255,255,.5);
+    font-family: 'Muli', sans-serif;
+}
+//Application
+.menuone{
+    padding-left:10px;
+    position:relative;
+}
+li a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    cursor: pointer;
+    color:white;
+  }
+  
+  
+  li a:hover {
+    background-color:#1e2129;
+
+  }
+//   Iconapplication
+  .dash{
+    margin-top:30px !important;
+  }
+  //   Iconapplication
+//   sub-application
+  .iconname{
+    justify-content:space-between;
+    margin-left:10px;
+
+}
+//   sub-application
+//sidnavbarflow
+.overflow-y {
+    overflow-y: scroll;
+ }
+ //sidnavbarflow
+//leftnav
+// main-content
+.main-content{
+display:flex;
+}
+//materialtoolbaricon
+.headericon{
+    padding-right:10px;
+    color: rgba(0,0,0,.54)
+}
+//materialtoolbaricon
+
+mat-icon{
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    line-height: 16px;
+    cursor:pointer;
+  }
+  //iconname
+  .iconname{
+      flex: 1 1 auto;
+      margin-left:10px;
+  }
+  //mat-chip
+  mat-chip{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 0 7px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: opacity .2s ease-in-out .1s;
+    margin-left: 8px;
+  }
+ //iconname
+ 
+  //matoolbarcharle
+  .border{
+      border-radius: 50%;
+  }
+  //matoolbarcharle
+  //seperator
+  .toolbar-separator {
+    border-right: 1px solid  lightgrey;
+    height:62px;
+  }
+   //seperator
+   //menubottom
+  button{
+      height:auto;
+      width:auto;
+  }
+   //menubottom
+  .right{
+      min-width:50px; 
+      margin-left:10px;
+  }
+  //menubottom
+  .right-side{
+      margin-left:3px;
+  }
+   //menubottom
+  .container{
+    height: 160px;
+    min-height: 160px;
+    max-height: 160px;
+}
+.example-card {
+  max-width: 200px;
+  min-height:200px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.card{
+  padding: 12px
+}
+.header{
+color:white;
+font-size:34px;
+bottom:30px;
+margin-left:30px;
+font-family: Muli,'Helvetica Neue',Arial,sans-serif;
+}
+.maincontain{
+    font-size:60px; 
+    margin-left:20px; 
+}
+.cardtitlemanage{
+    padding-left:20px;
+}
+.cardcontain{
+    font-size:16px;
+    padding:16px !important;
+}
+.middlecontain{
+    font-size:72px;
+}
+.example-card1{
+   height:auto;
+    width:200px;
+    margin-bottom:10px;
+    text-decoration-color: rgba(0,0,0,.54);
+    margin-left: 10px;
+}
+.cardtitlemanage1{
+    padding-left:52px;
+}
+.mat-card-header{
+ margin-bottom:20px;
+ color:rgba(0,0,0,.54);
+}
+.temp{
+    font-size:42px;
+    }
+    .celcious{
+        font-size:42px;
+    }
+    .spacemanage{
+        padding-top:20px;
+    }
+    .columnseconddiv{
+        flex-direction: row;
+        box-sizing: border-box;
+        display: flex;
+        place-content: center space-between;
+        align-items: center;
+        font-size: 14px;
+        padding-bottom: 16px !important;
+    }
+    .tabcard{
+       margin-right:10px;
+        margin-left:20px;
+        margin-bottom:10px;
+        margin-top:10px;
+    }
+    .tabcardtitlemanage{
+        padding-left:35px;
+    }
+    .secondcard{
+        height:300px;
+        width:500px;
+        color:rebeccapurple;
+    }
+    .tabcard2{
+    
+        margin-left:20px;
+        margin-top:10px;
+    }
+   .overflow-y {
+      overflow-y: scroll;
+   }
+   .headericon{
+       padding-right:10px;
+       color: rgba(0,0,0,.54)
+   }
+   li{
+       list-style: none;
+   }
+   //budget Summary
+   .tabcardbar{
+       height:500px;
+       width:300px;
+       margin-right:10px;
+       margin-bottom:10px;
+       margin-top:10px;
+       margin-left:10px;
+   }
+   .tabcardtitlemanage1{
+       padding-left:15px;
+   }
+   .tabcardtitlemanage2{
+      padding-left:30px;
+  }
+  .tabcardtitlemanage3{
+      padding-left:15px;
+  }
+  .material-icons{
+      cursor:pointer;
+  }
+//main-content
+//footer
+.footer
+{
+    z-index:11111;
+    height:64px;
+ }
+ //footer content
+.footer-content{
+color:white;
+}
+//footer content
+//footerbuttonspan
+.footerbutton{
+margin-top:20px;
+margin-left:15px;
+font-size:14px;
+font-family: Muli,Helvetica Neue,Arial,sans-serif;
+}
+//footerbuttonspan
+// buttontext
+.buttontext,.footersidecontent2{
+    font:14px;
+    font-family: Muli,Helvetica Neue,Arial,sans-serif;
+}
+//butttontext
+
+.border-top{
+    border-top: 1px solid rgba(0,0,0,.12);
+    width:100%;
+    padding: 16px!important;
+}
+//fottersidecontent1
+.fottersidecontent1{
+margin-right:10px;
+font:14px;
+font-family: Muli,Helvetica Neue,Arial,sans-serif;
+}
+//fottersidecontent1
+//footericon
+.footericon{
+    margin-right:5px;
+}
+//footericon
+//side-fotter
+.side-fotter{
+    margin-top:25px;
+    margin-right:15px;
+}
+//side-footer
+//footer
+//container
+
+// main
+.overflow-x{
+    overflow-x: hidden;
+}
+.stickyheader{
+    position:fixed;
+    justify-content:space-between;
+}
+.rightpart{
+    margin-right:10px;
+
+}
+.marginmanage{
+    color:rgba(0,0,0,.54);
+    margin-right:5px;
+}
+.buttonmanage{
+    position:relative;
+    top:5px;
+    padding-right: 10px;
+}
+
